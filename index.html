@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrega II — Linguagem de Estilo: Interface Modernas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Aprenda+</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="burger" aria-expanded="false" aria-controls="menu" id="burgerBtn">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="#">Início</a></li>
+          <li class="has-sub">
+            <button class="sub-toggle" aria-expanded="false">Cursos ▾</button>
+            <ul class="submenu">
+              <li><a href="#">Desenvolvimento</a></li>
+              <li><a href="#">Matemática</a></li>
+              <li><a href="#">Biologia</a></li>
+            </ul>
+          </li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Construindo Interfaces Web Modernas com CSS3</h1>
+      <p>Design system, layout responsivo com Grid e Flexbox, componentes acessíveis e animações leves.</p>
+      <a class="btn primary" href="#projects">Ver Projetos</a>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projetos em Destaque</h2>
+      <div class="cards">
+        <!-- 6 example cards -->
+        <article class="card">
+          <img src="images/imagem01.jpg" alt="">
+          <div class="card-body">
+            <h3>Projeto 1</h3>
+            <p>Card responsivo com grid e flexbox para alinhamento interno.</p>
+            <div class="card-actions">
+              <span class="badge">HTML</span>
+              <a class="btn" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/imagem02.jpg" alt="">
+          <div class="card-body">
+            <h3>Componente 2</h3>
+            <p>Exemplo de formulário estilizado e validação visual.</p>
+            <div class="card-actions">
+              <span class="badge">Form</span>
+              <a class="btn" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/imagem03.jpg" alt="">
+          <div class="card-body">
+            <h3>Projeto 3</h3>
+            <p>Layout de dashboard usando grid de 12 colunas.</p>
+            <div class="card-actions">
+              <span class="badge">Grid</span>
+              <a class="btn" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/imagem04.jpg" alt="">
+          <div class="card-body">
+            <h3>Projeto 4</h3>
+            <p>Componente modal com foco gerenciado para acessibilidade.</p>
+            <div class="card-actions">
+              <span class="badge">A11y</span>
+              <a class="btn" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/imagem05.jpg" alt="">
+          <div class="card-body">
+            <h3>Projeto 5</h3>
+            <p>Animações suaves e microinterações com CSS.</p>
+            <div class="card-actions">
+              <span class="badge">Anim</span>
+              <a class="btn" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/imagem08.jpg" alt="">
+          <div class="card-body">
+            <h3>Projeto 6</h3>
+            <p>Componentes reutilizáveis e tokens de design.</p>
+            <div class="card-actions">
+              <span class="badge">Design</span>
+              <a class="btn" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <label>
+            Nome
+            <input name="name" required minlength="2" />
+            <span class="input-hint">Insira seu nome</span>
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" required />
+            <span class="input-hint">ex: voce@exemplo.com</span>
+          </label>
+
+          <label class="full">
+            Mensagem
+            <textarea name="message" required minlength="10"></textarea>
+            <span class="input-hint">Mensagem (mín 10 caracteres)</span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Enviar</button>
+          <button class="btn ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 — Plataforma Aprenda+ • Projeto de Entrega II</p>
+    </div>
+  </footer>
+
+  <!-- Modal / Toast area -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Fechar">✕</button>
+      <h3>Modal de Exemplo</h3>
+      <p>Conteúdo do modal — foco retornará ao elemento que abriu o modal.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
