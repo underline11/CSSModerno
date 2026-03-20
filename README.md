@@ -1,20 +1,22 @@
-# Entrega II — Estilização e Layouts (CSS3)
+#  Aprenda+ | Interface Moderna & Design System
 
-Este projeto contém a estrutura e os arquivos pedidos na Entrega II — Estilização e Layouts.
+Este projeto é uma plataforma de aprendizado (EduTech) desenvolvida para demonstrar técnicas avançadas de CSS3, componentização e acessibilidade web.
 
-## O que está incluído
-- `index.html` — página principal com exemplos de componentes.
-- `css/style.css` — design system, grid (12 colunas), tokens (cores, tipografia, espaçamento), breakpoints e componentes.
-- `js/main.js` — interações: menu mobile, submenu, modal, toasts e validação básica de formulário.
-- `images/` — imagens placeholder em SVG.
-- `.gitignore` — arquivos padrão.
+##  Destaques do Projeto
+- **Design System Modular:** Uso de variáveis CSS para controle centralizado de cores, tipografia e espaçamento (Design Tokens).
+- **Layout Inteligente:** Implementação de CSS Grid e Flexbox com um sistema auxiliar de 12 colunas.
+- **Acessibilidade (A11y):** Modal com gerenciamento de foco (trap focus), menu burger acessível e estados de contraste validados.
+- **Componentes Modernos:** Cards com microinterações, formulários com validação visual e sistema de notificações (Toast).
 
-## Instruções
-1. Faça download do conteúdo ou clone o repositório.
-2. Abra `index.html` no navegador.
-3. Os tokens CSS estão no início do arquivo `css/style.css` (cores, tipografia, espaçamento).
-4. O projeto é responsivo e contém pelo menos 5 breakpoints e um sistema de grid modular de 12 colunas.
+##  Tecnologias
+- **HTML5:** Marcação semântica para SEO e leitores de tela.
+- **CSS3 Avançado:** Grid, Flexbox, Animações e Glassmorphism.
+- **Vanilla JavaScript:** Lógica de interface sem dependências externas.
 
-## Entrega
-Coloque todo o conteúdo em um repositório público no GitHub e compartilhe o link conforme exigido no enunciado.
+##  Responsividade
+O projeto conta com 5 breakpoints estratégicos, garantindo uma experiência fluida desde smartphones compactos até monitores ultrawide.
 
+##  Como testar
+1. Baixe os arquivos do repositório.
+2. Abra o `index.html` no seu navegador.
+3. Redimensione a tela para ver a adaptação do grid e teste a navegação completa usando apenas a tecla `TAB`.
